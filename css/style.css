@@ -1,0 +1,272 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+.menu-link{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #383838;
+    text-decoration: none;
+}
+.content-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 68px;
+    line-height: 81px;
+    color: #090914;
+}
+.content-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #383838;
+}
+.content-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 258px;
+    height: 68px;
+    background: #7E6B4C;
+    gap: 9px;
+    color: white;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.dish-1{
+    width: 570px;
+    height: 703px;
+}
+.dish-2{
+    width: 570px;
+    height: 703px;
+    display: flex;
+    justify-content: end;
+}
+.logo{
+    width: 80px;
+    height: 40px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.content-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: #FAF5E9;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 704px;
+    animation-name: header;
+    animation-duration: 3s;
+}
+.content-2{
+    display: flex;
+    justify-content: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.title-1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: -2px;
+    color: #090914;
+}
+.img-2{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    gap: 25px;
+    justify-content: center;
+}
+.title-2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 62px;
+    letter-spacing: -2px;
+
+    color: #090914;
+}
+.text-2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    color: #383838;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+    background-color: #F4EFE3;
+    border-radius: 10px;
+    width: 449px;
+    height: 60px;
+}
+.buy{
+    animation-name: buy;
+    animation-duration: 2s;
+}
+.burger-menu{
+    display: none;
+}
+.button-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #7E6B4C;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    width: 449px;
+    height: 60px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: white;
+}
+.menu-2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.content-3{
+    margin-top: 50px;
+    background-color: #F4EFE3;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text-3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 144%;
+    text-align: right;
+
+    color: #383838;
+}
+.footer{
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    height: 50px;
+}
+.logo-2{
+    width: 80px;
+    height: 40px;
+}
+@media screen and (max-width: 1080px){
+    .dish-2{
+        display: none;
+    }
+    .dish-1{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .img-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .pasta{
+        display: none;
+    }
+    .content-3{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-link{
+        display: none;
+    }
+    .menu-link{
+        display: none;
+    }
+    .burger-menu{
+        display: inline;
+        width: 50px;
+        height: 50px;
+    }
+}
+.button-2:hover{
+    background-color: goldenrod;
+}
+
+.content-button:hover{
+    background-color: goldenrod;
+}
+@keyframes header{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes buy {
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.up{
+    width: 50px;
+    height: 50px;
+}
+img{
+    border-radius: 10px;
+}
+.logo{
+    border-radius: 0px;
+}
+.logo-2{
+    border-radius: 0px;
+}
